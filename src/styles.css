@@ -1,0 +1,45 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.sport {
+  background: blue !important;
+  color: whitesmoke !important;
+}
+
+.life {
+  background: orangered !important;
+}
+
+.style {
+  background: red !important;
+}
+
+mat-chip.mat-chip.mat-primary.mat-standard-chip {
+  min-height: 1rem;
+  padding: 9px;
+}
+
+.active {
+  border: 1px solid whitesmoke;
+}
+
+.container-spinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

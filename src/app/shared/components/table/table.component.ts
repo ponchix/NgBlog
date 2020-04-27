@@ -1,5 +1,5 @@
 
-import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit, Input } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
@@ -17,7 +17,10 @@ import { ModalComponent } from './../modal/modal.component';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit, AfterViewInit {
-  displayedColumns: string[] = ['titlePost', 'tagsPost', 'actions'];
+  @Input() post: PostI;
+
+  displayedColumns: String[] = ['titlePost', 'tagsPost', 'actions'];
+
   dataSource = new MatTableDataSource();
 
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;

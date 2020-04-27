@@ -46,7 +46,7 @@ import { DetailsPostComponent } from './components/posts/details-post/details-po
     ReactiveFormsModule,
     EditPostModule
   ],
-  entryComponents: [ModalComponent],
+  entryComponents:[ModalComponent],
   providers: [
     { provide: StorageBucket, useValue: 'gs://ngblog-eab58.appspot.com' }
   ],

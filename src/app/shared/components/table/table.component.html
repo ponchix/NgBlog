@@ -1,4 +1,4 @@
-<mat-form-field>
+<mat-form-field >
   <input
     matInput
     (keyup)="applyFilter($event.target.value)"
@@ -37,7 +37,3 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 </table>
 
-<mat-paginator
-  [pageSizeOptions]="[5, 10, 20]"
-  showFirstLastButtons
-></mat-paginator>
